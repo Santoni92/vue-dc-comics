@@ -3,7 +3,11 @@
     <div class="logo">
       <img src="" alt="">
     </div>
-    <div class="menu"></div>
+    <div class="menu">
+      <ul>
+        <li v-for="link in links">{{link}}</li>
+      </ul>
+    </div>
   </header>
 </template>
 
@@ -11,10 +15,17 @@
 export default {
   name: 'HeaderComponent',
 }
+data:{
+  links:['CHARACTERS','COMICS','MOVIE']
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+header{
+  display: flex;
+}
+
 h3 {
   margin: 40px 0 0;
 }
