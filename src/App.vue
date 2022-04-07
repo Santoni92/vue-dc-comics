@@ -2,7 +2,7 @@
   <div id="app">
     <Header :links="menu"/>
     <Main :posters="locandine"/>
-    <Contatti/>
+    <Contatti :contacts="contatti"/>
     <Informazioni/>
     <Footer/>
 
@@ -23,7 +23,8 @@ export default {
   data(){
     return {
       menu:['CHARACTERS','COMICS','MOVIES','TV','GAMES','COLLECTIBLES','VIDEOS','FANS','NEWS','SHOP'],  //faccio il return della struttura dati così da poterne fare il rendering nel componente tramite la props
-      locandine
+      locandine,
+      contatti: ['DIGITAL COMICS','DC MERCHANDISING','SUBSCRIPTION','COMIC SHOP LOCATOR','DC POWER VISA']
       }
   },
   components: {
