@@ -1,16 +1,20 @@
 <template>
   <div class="dc-contatti">
     <div v-for="contact in contacts" :key="contact">
-      {{contact}}
+      <CardContatto :contatto="contact"/>
     </div>
   </div>
 </template>
 
 <script>
+import CardContatto from '@/components/CardContatto.vue'
 export default {
     name: 'ContattiComponent',
     props:{
       contacts:Array
+    },
+    components:{
+      CardContatto
     }
 }
 </script>

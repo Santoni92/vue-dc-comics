@@ -19,18 +19,34 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .container{
-     max-width: 1200px;
-     margin: 0 auto;
-     background-color: #1c1c1c;
-     display: flex;
-    flex-wrap: wrap;
-    .thumb{
-      width:calc(100% / 6);
-      .text{
-        color:white;
-        font-size:20px;
-      }
-    }
-  }
+main{
+    background-color: #1c1c1c;
+   .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+   flex-wrap: wrap;
+   .thumb{
+     width:calc(100% / 6);
+     .text{
+       color:white;
+       font-size:20px;
+     }
+   }
+ }
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 </style>
