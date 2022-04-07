@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header :links="menu"/>
     <Main/>
     <Contatti/>
     <Informazioni/>
@@ -18,6 +18,11 @@ import Footer from './components/Footer.vue'
 
 export default {
   name: "App",
+  data(){
+    return {
+      menu:['CHARACTERS','COMICS','MOVIES','TV','GAMES','COLLECTIBLES','VIDEOS','FANS','NEWS','SHOP']
+      }
+  },
   components: {
     Header,
     Main,

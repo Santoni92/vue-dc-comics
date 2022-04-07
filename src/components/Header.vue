@@ -1,22 +1,25 @@
 <template>
-  <header>
-    <div class="logo">
-      <img src="" alt="">
-    </div>
-    <div class="menu">
-      <ul>
-        <li v-for="link in links">{{link}}</li>
-      </ul>
-    </div>
-  </header>
+<div>
+ <header>
+   <div class="logo">
+     <img src="../assets/img/dc-logo.png" alt="">
+   </div>
+   <div class="menu">
+     <ul>
+       <li v-for="(item,index) in links" :key="'link-'+index">{{item}}</li>
+     </ul>
+   </div>
+ </header>
+</div>
+ 
 </template>
 
 <script>
 export default {
   name: 'HeaderComponent',
-}
-data:{
-  links:['CHARACTERS','COMICS','MOVIE']
+  props:{
+    links:Array
+  }
 }
 </script>
 
@@ -24,6 +27,8 @@ data:{
 <style scoped lang="scss">
 header{
   display: flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
 h3 {
